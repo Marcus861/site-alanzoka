@@ -1,0 +1,135 @@
+<!-- Marcus Vinicius Alves Dias
+ 2ºE
+ 23/08/25 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alanzoka - O Fenômeno da Twitch</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Painel de acessibilidade -->
+    <div class="menu-acessibilidade">
+        <button id="botao-acessibilidade" aria-expanded="false">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+            <button id="aumentar-fonte">Aumentar Fonte</button>
+            <button id="diminuir-fonte">Diminuir Fonte</button>
+            <button id="alterna-contraste">Alto Contraste</button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="p-4">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="alanzoka-logo.png" alt="Logotipo do Alanzoka" class="nav-img" loading="lazy">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5">
+
+        <!-- Início -->
+        <section id="inicio"
+            class="inicio-fundo d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <figure>
+                <img src="alanzoka.png" alt="Foto de Alanzoka" class="rounded-circle" width="250" height="250">
+                <figcaption class="text-center text-white mt-2">Alanzoka em transmissão ao vivo. Créditos: <a href="https://www.youtube.com/c/gamerpatife">Patife</a></figcaption>
+            </figure>
+            <div class="esquerda-conteudo">
+                <h1 class="display-4 fw-bold text-gradient">Alanzoka: O Fenômeno da Twitch</h1>
+                <a href="#alanzoka" class="btn btn-primary btn-lg botao-inicio">Quero conhecer!</a>
+            </div>
+        </section>
+
+        <!-- Biografia -->
+        <section id="alanzoka" class="my-5">
+            <div class="col-12 col-md-10 mx-auto">
+                <h2 class="mb-3">Biografia</h2>
+                <p>
+                    <strong>Alan Ferreira</strong>, mais conhecido como <strong>Alanzoka</strong>, nasceu em 13 de maio
+                    de 1990,
+                    em São Paulo. Começou sua carreira no YouTube em 2011 e rapidamente se tornou um dos criadores de
+                    conteúdo de
+                    jogos mais populares do Brasil. Na Twitch, conquistou o posto de maior streamer brasileiro, com uma
+                    comunidade
+                    engajada e apaixonada.
+                </p>
+                <h3 class="mt-4">O SUCESSO NA TWITCH</h3>
+                <p>
+                    Alanzoka se destacou pela diversidade de jogos transmitidos, pelo bom humor e pela interação
+                    constante com os
+                    fãs. Hoje, é um dos streamers mais assistidos do mundo, sendo referência internacional no cenário.
+                </p>
+                <h3 class="mt-4">LEGADO NA INTERNET</h3>
+                <p>
+                    Muito além de entretenimento, Alanzoka inspira jovens criadores a seguirem o mesmo caminho. Sua
+                    trajetória é
+                    marcada pela autenticidade, humildade e paixão pelos games.
+                </p>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section id="galeria" class="py-5">
+            <h2 class="text-center mb-4">Galeria</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="alanzoka.png" class="img-fluid rounded-4" alt="Alanzoka em live">
+                </div>
+                <div class="col-md-4">
+                    <img src="alanzoka-vesgo.png" class="img-fluid rounded-4" alt="Setup de Alanzoka">
+                </div>
+                <div class="col-md-4">
+                    <img src="alanzoka-logo.png" class="img-fluid rounded-4" alt="Arte de fãs">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="py-5">
+            <div class="col-md-8 col-lg-6 mx-auto formulario p-4 rounded-4">
+                <h2 class="mb-3">Entre em contato</h2>
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" class="form-control rounded-3 mt-1"
+                            placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control rounded-3 mt-1"
+                            placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" class="form-control rounded-3 mt-1" rows="4"
+                            placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 rounded-pill">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-center p-3 text-white-50">
+        <p class="mt-3">Produzido por Marcus Vinicius Alves Dias</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

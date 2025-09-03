@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --fundo: #1a0033;
+    --roxo-claro: #9146ff;
+    /* cor Twitch */
+    --branco: #ffffff;
+    --cinza: #bbbbbb;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fundo);
+    color: var(--branco);
+    margin: 0;
+    transition: font-size 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: transparent;
+}
+
+.nav-link {
+    color: var(--cinza);
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--roxo-claro);
+}
+
+.inicio-fundo {
+    background: linear-gradient(135deg, #2a0066, #1a0033);
+    border-radius: 20px;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #9146ff, #bb86fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botao-inicio {
+    background-color: var(--roxo-claro);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    color: var(--branco);
+}
+
+.botao-inicio:hover {
+    background-color: #772ce8;
+}
+
+h2,
+h3 {
+    color: var(--roxo-claro);
+}
+
+p {
+    color: var(--cinza);
+    line-height: 1.6;
+}
+
+#galeria {
+    background-color: #120024;
+}
+
+.formulario {
+    background-color: rgba(50, 0, 90, 0.8);
+    box-shadow: 0 0 15px rgba(145, 70, 255, 0.3);
+}
+
+footer {
+    background-color: #120024;
+    color: var(--cinza);
+}
+
+/* ------------------------- */
+/*     ALTO CONTRASTE        */
+/* ------------------------- */
+
+body.alto-contraste {
+    background-color: #000 !important;
+    color: #ff0 !important;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste #galeria,
+body.alto-contraste .formulario,
+body.alto-contraste .inicio-fundo {
+    background-color: #000 !important;
+    color: #ff0 !important;
+    box-shadow: none !important;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste label,
+body.alto-contraste figcaption,
+body.alto-contraste a {
+    color: #ff0 !important;
+}
+
+body.alto-contraste .nav-link {
+    color: #ff0 !important;
+}
+
+body.alto-contraste .nav-link:hover {
+    background-color: #ff0 !important;
+    color: #000 !important;
+}
+
+body.alto-contraste .botao-inicio,
+body.alto-contraste button,
+body.alto-contraste input,
+body.alto-contraste textarea {
+    background-color: #ff0 !important;
+    color: #000 !important;
+    border: 2px solid #ff0 !important;
+}
+
+body.alto-contraste .btn-primary {
+    background-color: #ff0 !important;
+    color: #000 !important;
+    border: 2px solid #ff0 !important;
+}
